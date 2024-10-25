@@ -1,0 +1,24 @@
+
+# 88.34±1.23
+cora_ml:
+  lr: 0.005
+  hidden_dim: 256
+  num_layers: 6
+  jk: "cat"
+  patience: 200
+  conv_type: "nddgnn"
+  alpha: 1.0
+  beta: 0.1
+  dropout: 0.5
+
+# 94.17 ± 0.41
+citeseer_full:
+  lr: 0.005
+  hidden_dim: 256
+  num_layers: 6
+  jk: "cat"
+  patience: 200
+  conv_type: "nddgnn"
+  alpha: 0.3
+  beta: 0.2
+  normalize: True

@@ -1,0 +1,85 @@
+# 75.38 ± 1.95
+squirrel:
+  lr: 0.01
+  hidden_dim: 128
+  num_layers: 4
+  jk: "max"
+  patience: 400
+  conv_type: "nddgnn"
+  alpha: 0.0
+  normalize: True
+  dropout: 0.6
+  beta: 0.9
+
+# 79.78
+chameleon:
+  lr: 0.005
+  hidden_dim: 128
+  num_layers: 6
+  jk: "max"
+  patience: 400
+  conv_type: "nddgnn"
+  alpha: 0.0
+  normalize: True
+  dropout: 0.35
+  beta: 0.1
+
+# 65.08 ± 0.26
+arxiv-year:
+  lr: 0.005
+  hidden_dim: 256
+  num_layers: 6
+  jk: "cat"
+  patience: 200
+  conv_type: "nddgnn"
+  alpha: 0.5
+  beta: 0.0
+  dropout: 0.5
+
+# 74.15 ± 0.05
+snap-patents:
+  lr: 0.01
+  hidden_dim: 32
+  num_layers: 5
+  jk: "max"
+  patience: 200
+  normalize: True
+  conv_type: "nddgnn"
+  alpha: 0.0
+  beta: 0.0
+
+# 91.76 ± 0.23
+directed-roman-empire:
+  lr: 0.01
+  hidden_dim: 256
+  num_layers: 5
+  jk: "cat"
+  dropout: 0.2
+  patience: 200
+  conv_type: "nddgnn"
+  alpha: 0.8
+  beta: 0.0
+
+# 88.34±1.23
+cora_ml:
+  lr: 0.005
+  hidden_dim: 256
+  num_layers: 6
+  jk: "cat"
+  patience: 200
+  conv_type: "nddgnn"
+  alpha: 1.0
+  beta: 0.1
+  dropout: 0.5
+
+# 94.17 ± 0.41
+citeseer_full:
+  lr: 0.005
+  hidden_dim: 256
+  num_layers: 6
+  jk: "cat"
+  patience: 200
+  conv_type: "nddgnn"
+  alpha: 0.3
+  beta: 0.2
+  normalize: True
